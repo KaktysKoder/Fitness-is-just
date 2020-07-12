@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Fitness-is-just.Cmd/1.0.0": {
+        "dependencies": {
+          "Fitnes-is-just.BL": "1.0.0"
+        },
+        "runtime": {
+          "Fitness-is-just.Cmd.dll": {}
+        }
+      },
+      "Fitnes-is-just.BL/1.0.0": {
+        "runtime": {
+          "Fitnes-is-just.BL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Fitness-is-just.Cmd/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fitnes-is-just.BL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,13 @@
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\bin\Debug\netcoreapp3.1\Fitness-is-just.exe
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\bin\Debug\netcoreapp3.1\Fitness-is-just.deps.json
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\bin\Debug\netcoreapp3.1\Fitness-is-just.runtimeconfig.json
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\bin\Debug\netcoreapp3.1\Fitness-is-just.runtimeconfig.dev.json
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\bin\Debug\netcoreapp3.1\Fitness-is-just.dll
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\bin\Debug\netcoreapp3.1\Fitness-is-just.pdb
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.csprojAssemblyReference.cache
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.AssemblyInfoInputs.cache
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.AssemblyInfo.cs
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.csproj.CoreCompileInputs.cache
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.dll
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.pdb
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.genruntimeconfig.cache

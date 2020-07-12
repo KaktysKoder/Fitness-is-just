@@ -1,0 +1,93 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Fitnes-is-just.BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Fitnes-is-just.BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Fitnes-is-just.BL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Fitnes-is-just.BL/1.0.0": {
+      "type": "project",
+      "path": "../Fitnes-is-just.BL/Fitnes-is-just.BL.csproj",
+      "msbuildProject": "../Fitnes-is-just.BL/Fitnes-is-just.BL.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Fitnes-is-just.BL >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Rimutu\\.nuget\\packages\\": {},
+    "F:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "F:\\NamespaceCSharp\\GitHubProject\\Fitness-App\\Fitness-is-just\\Fitness-is-just.Cmd.csproj",
+      "projectName": "Fitness-is-just.Cmd",
+      "projectPath": "F:\\NamespaceCSharp\\GitHubProject\\Fitness-App\\Fitness-is-just\\Fitness-is-just.Cmd.csproj",
+      "packagesPath": "C:\\Users\\Rimutu\\.nuget\\packages\\",
+      "outputPath": "F:\\NamespaceCSharp\\GitHubProject\\Fitness-App\\Fitness-is-just\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "F:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Rimutu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "F:\\NamespaceCSharp\\GitHubProject\\Fitness-App\\Fitnes-is-just.BL\\Fitnes-is-just.BL.csproj": {
+              "projectPath": "F:\\NamespaceCSharp\\GitHubProject\\Fitness-App\\Fitnes-is-just.BL\\Fitnes-is-just.BL.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

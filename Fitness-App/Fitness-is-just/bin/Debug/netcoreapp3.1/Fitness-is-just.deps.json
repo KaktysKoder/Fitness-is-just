@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Fitness-is-just/1.0.0": {
+        "runtime": {
+          "Fitness-is-just.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Fitness-is-just/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

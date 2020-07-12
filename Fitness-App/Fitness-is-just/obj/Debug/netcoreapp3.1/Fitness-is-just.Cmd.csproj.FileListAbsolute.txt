@@ -1,0 +1,16 @@
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\bin\Debug\netcoreapp3.1\Fitness-is-just.Cmd.exe
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\bin\Debug\netcoreapp3.1\Fitness-is-just.Cmd.deps.json
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\bin\Debug\netcoreapp3.1\Fitness-is-just.Cmd.runtimeconfig.json
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\bin\Debug\netcoreapp3.1\Fitness-is-just.Cmd.runtimeconfig.dev.json
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\bin\Debug\netcoreapp3.1\Fitness-is-just.Cmd.dll
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\bin\Debug\netcoreapp3.1\Fitness-is-just.Cmd.pdb
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\bin\Debug\netcoreapp3.1\Fitnes-is-just.BL.dll
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\bin\Debug\netcoreapp3.1\Fitnes-is-just.BL.pdb
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.Cmd.csprojAssemblyReference.cache
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.Cmd.AssemblyInfoInputs.cache
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.Cmd.AssemblyInfo.cs
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.Cmd.csproj.CoreCompileInputs.cache
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.Cmd.csproj.CopyComplete
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.Cmd.dll
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.Cmd.pdb
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.Cmd.genruntimeconfig.cache
