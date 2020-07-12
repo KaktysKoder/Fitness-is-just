@@ -5,6 +5,7 @@ namespace Fitnes_is_just.BL.Model
     /// <summary>
     /// Пользователь.
     /// </summary>
+    [Serializable]
     public class User
     {
         /// <summary>

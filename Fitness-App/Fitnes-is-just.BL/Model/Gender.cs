@@ -5,6 +5,7 @@ namespace Fitnes_is_just.BL.Model
     /// <summary>
     /// Пол пользователя.
     /// </summary>
+    [Serializable]
     public class Gender
     {
         /// <summary>
