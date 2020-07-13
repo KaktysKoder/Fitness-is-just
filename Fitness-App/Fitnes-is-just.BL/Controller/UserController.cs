@@ -11,16 +11,34 @@ namespace Fitnes_is_just.BL.Controller
     public class UserController
     {
         /// <summary>
+        /// Получение данных о пользователе приложения.
+        /// </summary>
+        /// <returns>Пользователя приложения.</returns>
+        public UserController()
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+
+            using (FileStream fs = new FileStream("users.dat", FileMode.OpenOrCreate))
+            {
+                if (formatter.Deserialize(fs) is User user)
+                {
+                    User = user;
+                }
+            }
+        }
+        /// <summary>
         /// Создание нового контроллера пользователя.
         /// </summary>
         /// <param name="user">Пользователь приложения.</param>
-        public UserController(User user)
+        public UserController(string userName, string genderName, DateTime birthDay, float weight, float height)
         {
-            User = user ?? throw new ArgumentNullException("Имя пользователя не может быть пустым.", nameof(user));
+            Gender gender = new Gender(genderName);
+
+            User = new User(userName, gender, birthDay, weight, height);
         }
 
         /// <summary>
-        /// Пользователь приложения.
+        /// Активный пользователь приложения.
         /// </summary>
         public User User { get; }
 
@@ -36,20 +54,5 @@ namespace Fitnes_is_just.BL.Controller
                 formatter.Serialize(fs, User);
             }
         }
-
-        /// <summary>
-        /// Получение данных о пользователе приложения.
-        /// </summary>
-        /// <returns>Пользователя приложения.</returns>
-        public User Load()
-        {
-            BinaryFormatter formatter = new BinaryFormatter();
-
-            using (FileStream fs = new FileStream("users.dat", FileMode.OpenOrCreate))
-            {
-                return formatter.Deserialize(fs) as User;
-            }
-        }
-
     }
 }
