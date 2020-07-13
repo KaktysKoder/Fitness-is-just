@@ -1,17 +1,12 @@
 ﻿using Fitnes_is_just.BL.Controller;
-using Fitnes_is_just.BL.Model;
 using System;
 
 namespace Fitness_is_just
 {
     internal sealed class Start
     {
-        private static void Main()
-        {
-            TestingInterfaceApp();
-        }
+        private static void Main() => TestingInterfaceApp();
 
-        //TODO: переписать
         private static void TestingInterfaceApp()
         {
             Console.WriteLine("♥Добро пожаловать♥. Фитнес это просто.\n");
@@ -66,7 +61,7 @@ namespace Fitness_is_just
                 {
                     return value;
                 }
-                else Console.WriteLine($"Неверный формат {name}.");
+                else Console.WriteLine($"Неверный формат {name}а.");
             }
         }
     }

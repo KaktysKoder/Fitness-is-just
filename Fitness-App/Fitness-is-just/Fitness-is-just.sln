@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitness-is-just.Cmd", "Fitness-is-just.Cmd.csproj", "{B39CD82B-4466-4480-911D-E8339AF7DC32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fitness-is-just.Cmd", "Fitness-is-just.Cmd.csproj", "{B39CD82B-4466-4480-911D-E8339AF7DC32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnes-is-just.BL", "..\Fitnes-is-just.BL\Fitnes-is-just.BL.csproj", "{BA07B616-8EE1-462B-9E32-1F6B64197B36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fitnes-is-just.BL", "..\Fitnes-is-just.BL\Fitnes-is-just.BL.csproj", "{BA07B616-8EE1-462B-9E32-1F6B64197B36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnes-is-just.BLTests", "..\Fitnes-is-just.BLTests\Fitnes-is-just.BLTests.csproj", "{676D4781-8A18-4406-BCE3-F5165F8C2A9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{BA07B616-8EE1-462B-9E32-1F6B64197B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA07B616-8EE1-462B-9E32-1F6B64197B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA07B616-8EE1-462B-9E32-1F6B64197B36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{676D4781-8A18-4406-BCE3-F5165F8C2A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{676D4781-8A18-4406-BCE3-F5165F8C2A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{676D4781-8A18-4406-BCE3-F5165F8C2A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{676D4781-8A18-4406-BCE3-F5165F8C2A9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

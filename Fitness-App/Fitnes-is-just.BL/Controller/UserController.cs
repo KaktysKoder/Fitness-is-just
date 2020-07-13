@@ -22,7 +22,7 @@ namespace Fitnes_is_just.BL.Controller
 
             using (FileStream fs = new FileStream("users.dat", FileMode.OpenOrCreate))
             {
-                if (formatter.Deserialize(fs) is List<User> users)
+                if (fs.Length > 0 && formatter.Deserialize(fs) is List<User> users)
                 {
                     return users;
                 }
@@ -64,7 +64,7 @@ namespace Fitnes_is_just.BL.Controller
         public User CurrentUser { get; }
 
         /// <summary>
-        /// Является ли этот пользователь новым или мы получили его из приложения 
+        /// Является ли этот пользователь новым или мы получили его из приложения. 
         /// </summary>
         public bool IsNewUser { get; } = false;
 
