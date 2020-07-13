@@ -1,6 +1,8 @@
 ﻿using Fitnes_is_just.BL.Model;
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Fitnes_is_just.BL.Controller
@@ -11,36 +13,77 @@ namespace Fitnes_is_just.BL.Controller
     public class UserController
     {
         /// <summary>
-        /// Получение данных о пользователе приложения.
+        /// Получение сохранённый список пользователей.
         /// </summary>
         /// <returns>Пользователя приложения.</returns>
-        public UserController()
+        private List<User> GtUsersDate()
         {
             BinaryFormatter formatter = new BinaryFormatter();
 
             using (FileStream fs = new FileStream("users.dat", FileMode.OpenOrCreate))
             {
-                if (formatter.Deserialize(fs) is User user)
+                if (formatter.Deserialize(fs) is List<User> users)
                 {
-                    User = user;
+                    return users;
                 }
+                else return new List<User>();
             }
         }
         /// <summary>
         /// Создание нового контроллера пользователя.
         /// </summary>
-        /// <param name="user">Пользователь приложения.</param>
-        public UserController(string userName, string genderName, DateTime birthDay, float weight, float height)
+        /// <param name="userName">Пользователь приложения.</param>
+        public UserController(string userName)
         {
-            Gender gender = new Gender(genderName);
+            if(string.IsNullOrWhiteSpace(userName))
+            {
+                throw new ArgumentException("Имя пользователь не может быть пустым", nameof(userName));
+            }
 
-            User = new User(userName, gender, birthDay, weight, height);
+            Users = GtUsersDate();
+
+            CurrentUser = Users.SingleOrDefault(u => u.Name == userName);
+
+            if(CurrentUser == null)
+            {
+                CurrentUser = new User(userName);
+                Users.Add(CurrentUser);
+                IsNewUser = true;
+                Save();
+            }
         }
 
         /// <summary>
-        /// Активный пользователь приложения.
+        /// Список пользователей.
         /// </summary>
-        public User User { get; }
+        public List<User> Users { get; } //TODO: Использовать в будущем  IEnumerable || IReadOnlyList
+
+        /// <summary>
+        ///  Активный пользователь приложения.
+        /// </summary>
+        public User CurrentUser { get; }
+
+        /// <summary>
+        /// Является ли этот пользователь новым или мы получили его из приложения 
+        /// </summary>
+        public bool IsNewUser { get; } = false;
+
+        /// <summary>
+        /// Установить текущего пользователя.
+        /// </summary>
+        /// <param name="genderName"> Половая принадлежность.     </param>
+        /// <param name="birthDay"  > Дата рождения пользователя. </param>
+        /// <param name="weight"    > Вес пользователя.           </param>
+        /// <param name="height"    > Рост пользователя.          </param>
+        public void SetNewUserData(string genderName, DateTime birthDay, float weight = 31, float height = 101)
+        {
+            CurrentUser.Gender   = new Gender(genderName);
+            CurrentUser.BirthDay = birthDay;
+            CurrentUser.Weight   = weight;
+            CurrentUser.Height   = height;
+
+            Save();
+        }
 
         /// <summary>
         /// Сохранение данных о пользователе приложения.
@@ -51,7 +94,7 @@ namespace Fitnes_is_just.BL.Controller
 
             using (FileStream fs = new FileStream("users.dat", FileMode.OpenOrCreate))
             {
-                formatter.Serialize(fs, User);
+                formatter.Serialize(fs, Users);
             }
         }
     }

@@ -8,14 +8,24 @@ namespace Fitnes_is_just.BL.Model
     [Serializable]
     public class User
     {
+        public User(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                throw new ArgumentException("Имя пользователя не может быть пустым.", nameof(name));
+            }
+
+            Name = name;
+        }
+
         /// <summary>
         /// Создать нового пользователя.
         /// </summary>
-        /// <param name="name">     Имя пользователя             </param>
-        /// <param name="gender">   Половая принадлежность.      </param>
-        /// <param name="birthDay"> Дата рождения пользователя.  </param>
-        /// <param name="weight">   Вес пользователя.            </param>
-        /// <param name="height">   Рост пользователя.           </param>
+        /// <param name="name"    > Имя пользователя            </param>
+        /// <param name="gender"  > Половая принадлежность.     </param>
+        /// <param name="birthDay"> Дата рождения пользователя. </param>
+        /// <param name="weight"  > Вес пользователя.           </param>
+        /// <param name="height"  > Рост пользователя.          </param>
         public User(string name, Gender gender, DateTime birthDay, float weight, float height)
         {
             #region Проверка условий
@@ -62,13 +72,13 @@ namespace Fitnes_is_just.BL.Model
         /// <summary>
         /// Половая принадлежность.
         /// </summary>
-        public Gender Gender { get; }
+        public Gender Gender { get; set; }  //TODO: Нарушение защиты. Исправить.
 
         /// <summary>
         /// Дата рождения пользователя.
         /// </summary>
-        public DateTime BirthDay { get; }
-        
+        public DateTime BirthDay { get; set; }//TODO:  Нарушение защиты. Исправить.
+
         /// <summary>
         /// Вес пользователя.
         /// </summary>
@@ -78,8 +88,13 @@ namespace Fitnes_is_just.BL.Model
         /// Рост пользователя.
         /// </summary>
         public float Height { get; set; }
+
+        /// <summary>
+        /// Возраст пользователя.
+        /// </summary>
+        public int Age { get => DateTime.Now.Year - BirthDay.Year; } //TODO: Переписать вычисления
         #endregion
 
-        public override string ToString() => Name;
+        public override string ToString() => $"{Name} {Age}";
     }
 }
