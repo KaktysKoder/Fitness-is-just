@@ -2,15 +2,33 @@
 using Fitnes_is_just.BL.Model;
 using System;
 
+using System.Globalization;
+using System.Resources;
+
+using Fitness_is_just.Languages;
+
 namespace Fitness_is_just
 {
     internal sealed class Start
     {
+
+        #region Loanguage
+        private const string RU_LANGUAGE = "Ru-ru";
+        private const string EN_LANGUAGE = "En-ru";
+
+        private const string _RU_LANGUAGE      = "Fitness_is_just.Languages.MessagesRu-ru";
+        private const string _EN_LANGUAGE      = "Fitness_is_just.Languages.MessagesEn-ru";
+        //TODO: Реализовать выбор и переключение культуры
+        #endregion
+
         private static void Main() => TestingInterfaceApp();
 
         private static void TestingInterfaceApp()
         {
-            Console.WriteLine("♥Добро пожаловать♥. Фитнес это просто.\n");
+            var culture         = CultureInfo.CreateSpecificCulture(RU_LANGUAGE);
+            var resourceManager = new ResourceManager(_RU_LANGUAGE, typeof(Start).Assembly);
+
+            Console.WriteLine($"{resourceManager.GetString("Greeting", culture)}\n");
 
             Console.Write("►Введите имя пользователя: ");
             string name = Console.ReadLine();

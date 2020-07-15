@@ -14,3 +14,7 @@ F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreap
 F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.Cmd.dll
 F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.Cmd.pdb
 F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.Cmd.genruntimeconfig.cache
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness-is-just.Cmd.csproj.GenerateResource.cache
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness_is_just.Languages.MessagesRu-ru.resources
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness_is_just.Languages.MessagesEn-ru.resources
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitness-is-just\obj\Debug\netcoreapp3.1\Fitness_is_just.Languages.Messages.resources
