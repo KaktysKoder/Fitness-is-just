@@ -8,6 +8,7 @@ namespace Fitnes_is_just.BL.Controller
     /// <summary>
     /// Контроллер приёма пищей.
     /// </summary>
+    [Serializable]
     public class EatingController : BaseController
     {
         private const string FOODS_FILE_NAME   = "foods.dat";
