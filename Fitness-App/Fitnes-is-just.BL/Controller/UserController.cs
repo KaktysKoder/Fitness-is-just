@@ -62,7 +62,7 @@ namespace Fitnes_is_just.BL.Controller
         /// <param name="birthDay"  > Дата рождения пользователя. </param>
         /// <param name="weight"    > Вес пользователя.           </param>
         /// <param name="height"    > Рост пользователя.          </param>
-        public void SetNewUserData(string genderName, DateTime birthDay, float weight = 31, float height = 101)
+        public void SetNewUserData(string genderName, DateTime birthDay, double weight = 31, double height = 101)
         {
             CurrentUser.Gender   = new Gender(genderName);
             CurrentUser.BirthDay = birthDay;

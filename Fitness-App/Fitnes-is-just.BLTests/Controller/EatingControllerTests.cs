@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using Fitnes_is_just.BL.Model;
+using System.Linq;
 
 namespace Fitnes_is_just.BL.Controller.Tests
 {

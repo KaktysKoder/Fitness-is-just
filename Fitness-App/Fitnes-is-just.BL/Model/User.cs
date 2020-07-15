@@ -26,7 +26,7 @@ namespace Fitnes_is_just.BL.Model
         /// <param name="birthDay"> Дата рождения пользователя. </param>
         /// <param name="weight"  > Вес пользователя.           </param>
         /// <param name="height"  > Рост пользователя.          </param>
-        public User(string name, Gender gender, DateTime birthDay, float weight, float height)
+        public User(string name, Gender gender, DateTime birthDay, double weight, double height)
         {
             #region Проверка условий
             if (string.IsNullOrWhiteSpace(name))
@@ -82,12 +82,12 @@ namespace Fitnes_is_just.BL.Model
         /// <summary>
         /// Вес пользователя.
         /// </summary>
-        public float Weight { get; set; }
+        public double Weight { get; set; }
 
         /// <summary>
         /// Рост пользователя.
         /// </summary>
-        public float Height { get; set; }
+        public double Height { get; set; }
 
         /// <summary>
         /// Возраст пользователя.
