@@ -1,6 +1,7 @@
 ﻿using Fitnes_is_just.BL.Model;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Fitnes_is_just.BL.Controller
 {
@@ -19,7 +20,7 @@ namespace Fitnes_is_just.BL.Controller
             this.user = user ?? throw new ArgumentNullException("Пользователь не может быть пустым.", nameof(user));
 
             Foods   = GetAllFoods();
-            Eatings = GetAllEatings();
+            Eatings = GetEating();
         }
 
         #region Props
@@ -31,8 +32,29 @@ namespace Fitnes_is_just.BL.Controller
         /// <summary>
         /// Список приёма пищи.
         /// </summary>
-        public List<Eating> Eatings { get; }
+        public Eating Eatings { get; }
         #endregion
+
+        /// <summary>
+        /// Добавление еды. (приём пищи)
+        /// </summary>
+        public void Add(Food food, double weight)
+        {
+            //Получаем еду из списка существующих продуктов.
+            var product = Foods.FirstOrDefault(f => f.Name == food.Name);
+
+            if (product  == null)
+            {
+                Foods.Add(food);
+                Eatings.Add(food, weight);
+                Save();
+            }
+            else
+            {
+                Eatings.Add(product, weight);
+                Save();
+            }
+        }
 
         private void Save()
         {
@@ -47,12 +69,12 @@ namespace Fitnes_is_just.BL.Controller
         /// Получить полный список пищи. 
         /// </summary>
         /// <returns>Список пищи.</returns>
-        private List<Food> GetAllFoods()     => Load<List<Food>>(FOODS_FILE_NAME) ?? new List<Food>();
+        private List<Food> GetAllFoods() => Load<List<Food>>(FOODS_FILE_NAME) ?? new List<Food>();
 
         /// <summary>
-        /// Получить полный список съеденой пищи. 
+        /// Получить список съеденой пищи. 
         /// </summary>
         /// <returns>Список съеденой пищи</returns>
-        private List<Eating> GetAllEatings() => Load<List<Eating>>(EATINGS_FILE_NAME) ?? new List<Eating>();
+        private Eating GetEating()       => Load<Eating>(EATINGS_FILE_NAME)   ?? new Eating(user);
     }
 }

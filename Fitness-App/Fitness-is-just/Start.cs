@@ -61,7 +61,7 @@ namespace Fitness_is_just
                 {
                     return value;
                 }
-                else Console.WriteLine($"Неверный формат {name}а.");
+                else Console.WriteLine($"Неверный формат элемента {name}.");
             }
         }
     }

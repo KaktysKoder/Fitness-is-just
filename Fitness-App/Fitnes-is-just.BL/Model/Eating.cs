@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Xml.Linq;
 
 namespace Fitnes_is_just.BL.Model
 {
@@ -37,16 +36,13 @@ namespace Fitnes_is_just.BL.Model
 
         public void Add(Food food, double weight)
         {
-            var product = Foods.Keys.FirstOrDefault(f => f.Name.Equals(food.Name));
+            Food product = Foods.Keys.FirstOrDefault(f => f.Name.Equals(food.Name));
 
             if(product == null)
             {
                 Foods.Add(food, weight);
             }
-            else
-            {
-                Foods[product] += weight;
-            }
+            else Foods[product] += weight;
         }
     }
 }

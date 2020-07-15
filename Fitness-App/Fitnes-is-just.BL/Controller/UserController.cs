@@ -1,9 +1,7 @@
 ﻿using Fitnes_is_just.BL.Model;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Fitnes_is_just.BL.Controller
 {
@@ -25,19 +23,22 @@ namespace Fitnes_is_just.BL.Controller
                 throw new ArgumentException("Имя пользователь не может быть пустым", nameof(userName));
             }
 
-            Users = GtUsersDate();
+            Users = GetUsersDate();
 
             CurrentUser = Users.SingleOrDefault(u => u.Name == userName);
 
             if(CurrentUser == null)
             {
                 CurrentUser = new User(userName);
+
                 Users.Add(CurrentUser);
                 IsNewUser = true;
+
                 Save();
             }
         }
 
+        #region Props
         /// <summary>
         /// Список пользователей.
         /// </summary>
@@ -52,6 +53,7 @@ namespace Fitnes_is_just.BL.Controller
         /// Является ли этот пользователь новым или мы получили его из приложения. 
         /// </summary>
         public bool IsNewUser { get; } = false;
+        #endregion
 
         /// <summary>
         /// Установить текущего пользователя.
@@ -73,15 +75,12 @@ namespace Fitnes_is_just.BL.Controller
         /// <summary>
         /// Сохранение данных о пользователе приложения.
         /// </summary>
-        public void Save()
-        {
-            Save(USERS_FALE_NAME, Users);
-        }
+        public void Save() => Save(USERS_FALE_NAME, Users);
 
         /// <summary>
         /// Получение сохранённого списока пользователей.
         /// </summary>
         /// <returns>Пользователя приложения.</returns>
-        private List<User> GtUsersDate() => Load<List<User>>(USERS_FALE_NAME);
+        private List<User> GetUsersDate() => Load<List<User>>(USERS_FALE_NAME);
     }
 }
