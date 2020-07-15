@@ -13,7 +13,7 @@ namespace Fitnes_is_just.BL.Controller
         /// </summary>
         /// <param name="fileName" > Имя файла в который будет сериализованны данные.</param>
         /// <param name="item"     > Данные для сериализазии.                        </param>
-        protected void Save<T>(string fileName, object item)
+        protected void Save(string fileName, object item)
         {
             BinaryFormatter formatter = new BinaryFormatter();
 

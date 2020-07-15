@@ -10,25 +10,10 @@ namespace Fitnes_is_just.BL.Controller
     /// <summary>
     /// Пользовательский контроллер.
     /// </summary>
-    public class UserController
+    public class UserController : BaseController
     {
-        /// <summary>
-        /// Получение сохранённый список пользователей.
-        /// </summary>
-        /// <returns>Пользователя приложения.</returns>
-        private List<User> GtUsersDate()
-        {
-            BinaryFormatter formatter = new BinaryFormatter();
+        private const string USERS_FALE_NAME = "users.dat";
 
-            using (FileStream fs = new FileStream("users.dat", FileMode.OpenOrCreate))
-            {
-                if (fs.Length > 0 && formatter.Deserialize(fs) is List<User> users)
-                {
-                    return users;
-                }
-                else return new List<User>();
-            }
-        }
         /// <summary>
         /// Создание нового контроллера пользователя.
         /// </summary>
@@ -90,12 +75,13 @@ namespace Fitnes_is_just.BL.Controller
         /// </summary>
         public void Save()
         {
-            BinaryFormatter formatter = new BinaryFormatter();
-
-            using (FileStream fs = new FileStream("users.dat", FileMode.OpenOrCreate))
-            {
-                formatter.Serialize(fs, Users);
-            }
+            Save(USERS_FALE_NAME, Users);
         }
+
+        /// <summary>
+        /// Получение сохранённого списока пользователей.
+        /// </summary>
+        /// <returns>Пользователя приложения.</returns>
+        private List<User> GtUsersDate() => Load<List<User>>(USERS_FALE_NAME);
     }
 }
