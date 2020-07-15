@@ -1,8 +1,11 @@
-﻿namespace Fitnes_is_just.BL.Model
+﻿using System;
+
+namespace Fitnes_is_just.BL.Model
 {
     /// <summary>
     /// Продукт питания.
     /// </summary>
+    [Serializable]
     public class Food
     {
         public Food(string name) : this(name, 0, 0, 0, 0) { }
