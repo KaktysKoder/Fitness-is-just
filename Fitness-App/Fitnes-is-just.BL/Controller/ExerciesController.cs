@@ -49,7 +49,7 @@ namespace Fitnes_is_just.BL.Controller
             Save(Exercies_FILE_NAME, Exercises); //Сохранили список всех упражнений.
         }
 
-        private List<Activity> GetAllActivity() => Load<List<Activity>>(Activity_FILE_NAME);
+        private List<Activity> GetAllActivity() => Load<List<Activity>>(Activity_FILE_NAME) ?? new List<Activity>();
 
         private List<Exercies> GetAllExerciess() => Load<List<Exercies>>(Exercies_FILE_NAME) ?? new List<Exercies>();
 
