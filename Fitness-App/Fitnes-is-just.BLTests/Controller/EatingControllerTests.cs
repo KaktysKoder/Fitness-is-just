@@ -26,7 +26,7 @@ namespace Fitnes_is_just.BL.Controller.Tests
 
             eatingController.Add(food, 100);
 
-            //Assert.AreEqual(food.Name, eatingController.Eatings.Foods.First().Key.Name);
+            Assert.AreEqual(food.Name, eatingController.Eatings.Foods.First().Key.Name);
         }
     }
 }

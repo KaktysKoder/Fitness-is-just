@@ -18,7 +18,7 @@ namespace Fitnes_is_just.BL.Controller
         /// <param name="userName">Пользователь приложения.</param>
         public UserController(string userName)
         {
-            if(string.IsNullOrWhiteSpace(userName))
+            if (string.IsNullOrWhiteSpace(userName))
             {
                 throw new ArgumentException("Имя пользователь не может быть пустым", nameof(userName));
             }
@@ -81,6 +81,6 @@ namespace Fitnes_is_just.BL.Controller
         /// Получение сохранённого списока пользователей.
         /// </summary>
         /// <returns>Пользователя приложения.</returns>
-        private List<User> GetUsersDate() => Load<List<User>>(USERS_FALE_NAME);
+        private List<User> GetUsersDate() => Load<List<User>>(USERS_FALE_NAME) ?? new List<User>();
     }
 }

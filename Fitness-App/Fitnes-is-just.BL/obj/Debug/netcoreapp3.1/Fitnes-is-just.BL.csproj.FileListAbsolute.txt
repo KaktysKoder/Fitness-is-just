@@ -1,9 +1,9 @@
 F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitnes-is-just.BL\bin\Debug\netcoreapp3.1\Fitnes-is-just.BL.deps.json
 F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitnes-is-just.BL\bin\Debug\netcoreapp3.1\Fitnes-is-just.BL.dll
 F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitnes-is-just.BL\bin\Debug\netcoreapp3.1\Fitnes-is-just.BL.pdb
-F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitnes-is-just.BL\obj\Debug\netcoreapp3.1\Fitnes-is-just.BL.csprojAssemblyReference.cache
 F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitnes-is-just.BL\obj\Debug\netcoreapp3.1\Fitnes-is-just.BL.AssemblyInfoInputs.cache
 F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitnes-is-just.BL\obj\Debug\netcoreapp3.1\Fitnes-is-just.BL.AssemblyInfo.cs
 F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitnes-is-just.BL\obj\Debug\netcoreapp3.1\Fitnes-is-just.BL.csproj.CoreCompileInputs.cache
 F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitnes-is-just.BL\obj\Debug\netcoreapp3.1\Fitnes-is-just.BL.dll
 F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitnes-is-just.BL\obj\Debug\netcoreapp3.1\Fitnes-is-just.BL.pdb
+F:\NamespaceCSharp\GitHubProject\Fitness-App\Fitnes-is-just.BL\obj\Debug\netcoreapp3.1\Fitnes-is-just.BL.csprojAssemblyReference.cache

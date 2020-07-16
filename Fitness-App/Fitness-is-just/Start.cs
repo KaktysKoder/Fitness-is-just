@@ -53,6 +53,7 @@ namespace Fitness_is_just
 
             Console.WriteLine("Что вы хотите сделать?");
             Console.WriteLine("E - ввести приём пищи");
+            Console.WriteLine("A - ввести упражнения");
 
             var key = Console.ReadKey();
 
